@@ -1,0 +1,240 @@
+/*EStilo Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.interface2{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+ 
+/* Estilo do Cabeçalho */
+header {
+    background: #545454;
+    color: #fff;
+    padding: 20px 4%;
+}
+
+header > .interface2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*ESTILIZAR O MENU BACKGROUND*/
+ul{
+    list-style: none;
+    display: flex; /*PARA MENU FICAR UM AO LADO DO OUTRO*/
+    gap: 3rem; /*PARA AFASTAR UM POUCO CADA MENU*/
+    font-size: 10px;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #302f2f;
+    transition: 0.3s;
+}
+
+/*ESTILIZANDO INTERFACE DO MENU BACKGROUND E CENTRALIZANDO CONTEÚDO DO SITE*/
+.interface{
+    background-color: #424147; 
+    top: 0;
+    z-index: 1000;
+    max-width: 900px;
+	margin: 0 auto;
+}
+
+/*PERSONALIZAÇÃO DO DISPLAY DO MENU BACKGROUND*/
+.bottom-header nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+}
+
+/*PERSONALIZAR BOTTOM-HEADER*/
+.bottom-header nav ul li a{
+	color: #ffff;
+	padding: 20px 40px;
+	text-decoration: none;
+	font-size: 13px;
+	display: block;
+	transition: .3s;
+}
+
+.bottom-header nav ul li a:hover{
+	background-color: #c9bdab;
+	color: #424147;
+	box-shadow: inset 0 0 8px #000;
+}
+
+.drop-hover{
+	position: relative;
+}
+
+.drop-hover .drop{
+	position: absolute;
+	background-color: #5e5c64;
+	width: 100%;
+	height: 0;
+	overflow: hidden; /*TUDO QUE ESTÁ FORA DO ELEMENTO SERÁ ESCONDIDO*/
+	transition: .3s;
+}
+
+.drop-hover .drop a{
+	padding: 20px;
+}
+
+/*FAZER A ANIMAÇÃO DO MENU*/
+.drop-hover:hover .drop{
+	height: 138px;
+} /*AQUI TERMINA A ESTILIZAÇÃO DO MENU BACKGROUND*/
+
+
+/*AQUI COMEÇA A ESTILIZAÇÃO DO HEADER*/
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+}
+
+ul li a:hover{
+    color: #424147;
+    text-transform: capitalize;
+    color: #4dff00;
+    border-bottom: solid 1px; 
+    box-shadow: inset 0 0 8px #00000013;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    left: 90%; 
+    transform: translateX(-50%); 
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#ofertas .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.btn-detalhes {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-detalhes:hover {
+    background-color: #4dff00;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato input, #contato textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: #4dff00;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Personalização span de ofertas*/
+.card h5  span{
+    font-size: 20px;
+    color: #3caf0a;
+}
+
+/* Estilo para a seção "Sobre Nós" */
+.sobre p {
+    width: 60%; /* Define a largura do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    padding: 10px; /* Opcional: Adiciona preenchimento para melhor legibilidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*  Adiciona sombra */
+}

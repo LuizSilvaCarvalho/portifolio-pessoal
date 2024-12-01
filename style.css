@@ -1,0 +1,195 @@
+/* LIMPAR FORMATAÇÃO*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.interface{
+	font-family: "Oswald", sans-serif;
+	}
+  
+/*ESTILIZANDO INTERFACE E CENTRALIZANDO CONTEÚDO DO SITE*/
+.interface{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+body{
+	background-color: #c9bdab;
+}
+
+
+header{
+	width: 100%;
+	background-color: #424147;
+}
+
+.top-header > .interface{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1 {
+	color: #424147;
+	text-align: center;
+	text-decoration: none;
+	font-size: 35px;
+}
+
+h2{
+	margin-top: 3%;
+}
+
+h3 {
+	margin-top: 1%;
+}
+
+/*DIMENSÃO DO CONTEÚDO PARA NÃO FICAR COLADO NAS LATERAIS CASO A TELA SEJA MENOR*/
+.top-header{
+	background-color:#c9bdab;
+	padding: 20px 4%; 
+}
+
+/*REDUÇÃO DA LOGOTIPO*/
+.top-header .logotipo img{
+	max-width: 240px;
+	border-radius: 30%;
+}
+
+/*PERSONALIZAÇÃO DO DISPLAY DO MENU*/
+.bottom-header nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+}
+
+/*PERSONALIZAR BOTTOM-HEADER*/
+.bottom-header nav ul li a{
+	color: #ffff;
+	padding: 20px 40px;
+	text-decoration: none;
+	font-weight: 600;
+	display: block;
+	transition: .3s;
+}
+
+.bottom-header nav ul li a:hover{
+	background-color: #c9bdab;
+	color: #424147;
+	box-shadow: inset 0 0 8px #000;
+}
+
+.drop-hover{
+	position: relative;
+}
+
+.drop-hover .drop{
+	position: absolute;
+	background-color: #5e5c64;
+	width: 100%;
+	height: 0;
+	overflow: hidden; /*TUDO QUE ESTÁ FORA DO ELEMENTO SERÁ ESCONDIDO*/
+	transition: .3s;
+}
+
+.drop-hover .drop a{
+	padding: 20px;
+}
+
+/*FAZER A ANIMAÇÃO DO MENU*/
+.drop-hover:hover .drop{
+	height: 138px;
+}
+
+/*ALTERAÇÃO DO ID = IMG2*/
+#img2{
+	margin-top: 50px;
+	width: 180px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #868260	
+}
+
+/*CENTRALIZA TUDO NA CLASSE*/
+.center{
+	text-align: center;
+}
+
+/*TUDO QUE ESTIVER DENTRO DA CLASSE FICA AFASTADO DOS CANTOS DA PÁGINA*/
+.container{
+	padding: 0px 500px;
+}
+
+/*ESTILO DO FORMULÁRIO DE CONTATO*/
+section.formulário{
+	padding: 80px 4%;
+}
+
+form{
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 40px;
+}
+
+form input, form textarea{
+	width: 100%;
+	background-color: #0000001e;
+	border: 0;
+	outline: 0;
+	padding: 20px 15px;
+	border-radius: 15px;
+	font-size: 18px;
+	color: #424147;
+	font-family: "Oswald", serif;
+}
+
+form input::placeholder{
+	color: #424147;
+}
+
+form textarea{
+	resize: none;
+	max-height: 700px;
+	width: 100%; /* Define a largura da área de texto */ 
+	height: 250px; /* Define a altura da área de texto */
+	overflow: auto; /* Exibe barras de rolagem se necessário */
+}
+textarea::placeholder{
+	color: #424147;
+	font-family: "Oswald", serif;
+}
+
+form .btn-enviar{
+	margin-top: 20px;
+	text-align: center;
+}
+
+form .btn-enviar input{
+	width: 120px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .2s;
+}
+
+h2.titulo{
+	color: #ffff;
+	font-size: 38px;
+	text-align: center;
+}
+
+h2.titulo span{
+	color: #868260;
+}
+
+button:hover, form .btn-enviar input:hover{ /* Esta classe form .btn-enviar input:hover exibe efeito no botão enviar*/
+	transform: scale(1.05);
+	box-shadow: 0px 0px 8px #58472d;
+}
+

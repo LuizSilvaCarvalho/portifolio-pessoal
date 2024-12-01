@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Menu de Navegação</title>
+    
+</head>
+<body>
+    <header>
+        
+        <section class="bottom-header"> <!--PARTE DEBAIXO DO MEU CABEÇALHO-->
+            <div class="interface">
+                <nav> <!--ESTRUTURAR ONDE FICARÁ OS LINKS DE NAVEGAÇÃO-->
+                    <ul> <!--AQUI CRIA-SE UMA LISTA NÃO ORDENADA-->
+
+                        <!--ITENS DA LISTA-->   
+                        <li><a href= "index.html"> HOME</a></li>
+                        <li><a href="sobremim.html">SOBRE MIM</a></li>                      
+                        <li><a href="formação.html">FORMAÇÃO</a></li>
+                        <li class="drop-hover"><a href="#"> PROJETOS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg></a> 
+                            <div class="drop">
+                                <a href="projeto1.html">PROJETO 1</a>
+                                <a href="projeto2.html">PROJETO 2</a>
+                            </div>
+                        </li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>               
+            </div>
+        </section>   
+    </header>
+    <main>
+        <section class="formulário">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required> 
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required> 
+                    <input type="text" name="" id="" placeholder="Seu celular:"> <!--USA-SE PLACEHOLDER PARA SUMIR O TEXTO QUE FOI SOLICITADO NAQUELA ATRIBUIÇÃO-->
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form> <!--TAG PARA CRIAR FORMULÁRIO-->
+
+            </div>
+        </section>
+
+
+
+    </main>
+</body>
+</html>

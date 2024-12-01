@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleprojeto2.css">
+
+    <title>Agência de Viagem</title>
+    
+</head>
+<body>
+    <div class="background">
+        <section class="bottom-header"> <!--PARTE DEBAIXO DO MEU CABEÇALHO-->
+            <div class="interface">
+                <nav> <!--ESTRUTURAR ONDE FICARÁ OS LINKS DE NAVEGAÇÃO-->
+                    <ul> <!--AQUI CRIA-SE UMA LISTA NÃO ORDENADA-->
+
+                        <!--ITENS DA LISTA-->
+                        <li><a href= "index.html"> HOME</a></li>   
+                        <li><a href="sobremim.html">SOBRE MIM</a></li>                      
+                        <li><a href="formação.html">FORMAÇÃO</a></li>
+                        <li class="drop-hover"><a href="#"> PROJETOS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg></a> 
+                            <div class="drop">
+                                <a href="projeto1.html">PROJETO 1</a>
+                                <a href="projeto2.html">PROJETO 2</a>
+                            </div>
+                        </li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    <header>
+        <div class="interface2">
+            <div class="logo">
+            <img src="imagens/logoviagens.png" alt="logoviagens">
+        </div>
+        <nav> <!--Navegação do menu-->
+            <ul>
+                <li><a href="projeto2.html">Início</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="sobreaempresaviagens.html">Sobre</a></li>
+                <li><a href="contatoviagens.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="ofertas" class="ofertas">
+        <h2>Ofertas de Viagem</h2>
+        <div class="cards">
+            <div class="card"> <!--Imagens dos locais de viagem-->
+                <img src="imagens/Paris.png" alt="Viagem para Paris">
+                <h3>Paris</h3>
+                <p>Uma experiência única na cidade luz.</p>
+                <a href="ofertas.html" class="btn-detalhes">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <img src="imagens/londres.png" alt="Viagem para Londres">
+                <h3>Londres</h3>
+                <p>Explore a capital do Reino Unido.</p>
+                <a href="ofertas.html" class="btn-detalhes">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <img src="imagens/toquio.jpg" alt="Viagem para Tóquio">
+                <h3>Tokyo</h3>
+                <p>Uma mistura de tradição e modernidade.</p>
+                <a href="ofertas.html" class="btn-detalhes">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <img src="imagens/praia.jpg" alt="Viagem para Ceará">
+                <h3>Ceará</h3>
+                <p>Praia de Jericoacoara.</p>
+                <a href="ofertas.html" class="btn-detalhes">Ver Detalhes</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma agência especializada em viagens internacionais e nacionais. Acreditamos que viajar é mais do que apenas visitar novos lugares; é uma oportunidade para criar memórias duradouras, conhecer novas culturas e ampliar seus horizontes. Colocamos nossos clientes no centro de tudo o que fazemos. Desde o primeiro contato até o retorno da viagem, estamos aqui para garantir que você tenha a melhor experiência possível. Nosso time é composto por profissionais experientes e apaixonados por viagens, que estão prontos para ajudar você a planejar e realizar a viagem perfeita. Nosso objetivo é proporcionar aos nossos clientes experiências inesquecíveis.</p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> 2024 Agência de Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scriptprojeto2.js"></script>
+</body>
+</html>

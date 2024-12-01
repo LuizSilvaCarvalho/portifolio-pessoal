@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleProjeto1.css?v=1">
+
+    <title>Saboneteria</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <section class="bottom-header"> <!--PARTE DEBAIXO DO MEU CABEÇALHO-->
+            <div class="interface">
+                <nav> <!--ESTRUTURAR ONDE FICARÁ OS LINKS DE NAVEGAÇÃO-->
+                    <ul> <!--AQUI CRIA-SE UMA LISTA NÃO ORDENADA-->
+
+                        <!--ITENS DA LISTA-->
+                        <li><a href= "index.html"> HOME</a></li>   
+                        <li><a href="sobremim.html">SOBRE MIM</a></li>                      
+                        <li><a href="formação.html">FORMAÇÃO</a></li>
+                        <li class="drop-hover"><a href="#"> PROJETOS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg></a> 
+                            <div class="drop">
+                                <a href="projeto1.html">PROJETO 1</a>
+                                <a href="projeto2.html">PROJETO 2</a>
+                            </div>
+                        </li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <header> <!--Cabeçalho-->       
+            <div class="logo"> <!--Logo da página-->
+                <img src="imagens/LogotipoSaboneteria.png" alt="Logotipo">
+                <ul class="Links">
+                    <li><a href="projeto1.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>     
+                    <li><a href="produtos.html">Produtos</a></li>    
+                    <li><a href="faleconosco.html">Fale conosco</a></li>   
+                 </ul>
+                 <div class="C-Icone">
+                    <span class="Icone"><ion-icon name="search-outline"></ion-icon></span>
+                    <span class="Icone"><ion-icon name="cart-outline"></ion-icon></span>
+                 </div>
+            </div>
+        </header>
+        <hr>
+        <div class="C-title">
+            <div class="title"> <!--Título da página-->
+                <h1>"A PUREZA DA NATUREZA</h1>
+                <h1> EM CADA BARRA"</h1>
+            </div> 
+            <p>Os sabonetes artesanais oferecem uma experiência <br> única e enriquecedora para a sua pele.</p>
+            <Button>Compre agora</Button> <!--Botão de comprar-->
+        </div>
+        <br><br>
+        <div class="section-1"></section>
+            <h1><span>SOBRE</span> NÓS</h1>
+            <div class="Sobre-nós">
+                <div class="sobre-img">
+                    <img src="imagens/sobre-nós-img.jpg" alt="imagem-sobrenós">
+                </div> <!--IMAGEM DA DIV SOBRE NÓS-->
+
+                <div class="Sobre-nós-title">
+                    <h2>O que faz nosso sabonete ser especial? </h2>
+                    <p>Bem-vindo(a) à nossa saboneteria! Somos uma empresa dedicada à criação de sabonetes artesanais de alta qualidade, utilizando ingredientes naturais e processos sustentáveis. Nosso objetivo é proporcionar uma experiência única e luxuosa em cuidados com a pele, com produtos feitos com amor e atenção aos detalhes. <br><br> Fundada em 1980, nossa saboneteria nasceu da paixão por produtos naturais e do desejo de oferecer alternativas saudáveis e sustentáveis para o cuidado diário da pele. Começamos em uma pequena cozinha, experimentando diferentes fórmulas e técnicas, <br>até encontrar as combinações perfeitas de ingredientes que fazem nossos sabonetes tão especiais. Nossos ingredientes incluem óleos essenciais, manteigas vegetais, argilas naturais e ervas orgânicas.
+                    </p>
+                    <button>Compre agora</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-2">
+            <h1>NOSSOS <span>PRODUTOS</span></h1>
+
+            <div class="container-card-1">
+
+                <div class="card-img">
+                    <img src="imagens/Açai.jpg" id="Açai">
+                    <h3>Sabonete de açaí</h3>
+                    <p> R$13.90</p> <span>17.90</span>
+                    <button>Add carrinho</button>
+                </div>
+
+                <div class="card-img">
+                    <img src="imagens/flor.jpg" id="Flor">
+                    <h3>Sabonete floral</h3>
+                    <p> R$9.90</p> <span>12.90</span>
+                    <button>Add carrinho</button>
+                </div>
+
+                <div class="card-img">
+                    <img src="imagens/cacau.jpg" id="Cacau">
+                    <h3>Sabonete de cacau</h3>
+                    <p> R$10.90</p> <span>13.90</span>
+                    <button>Add carrinho</button>
+                </div>
+            </div>
+
+            <div id="container-card-2"> <!--CONTAINER 2-->
+                
+                <div class="card-img">
+                    <img src="imagens/hortelã.jpg" id="Hortelã">
+                    <h3>Sabonete de hortelã</h3>
+                    <p> R$9.90</p> <span>14.90</span>
+                    <button>Add carrinho</button>
+                </div>
+
+                <div class="card-img">
+                    <img src="imagens/manga.jpg" id="Manga">
+                    <h3>Sabonete de manga</h3>
+                    <p> R$12.90</p> <span>14.90</span>
+                    <button>Add carrinho</button>
+                </div>
+
+                <div class="card-img">
+                    <img src="imagens/limão.jpg" id="Limão">
+                    <h3>Sabonete de limão</h3>
+                    <p> R$11.90</p> <span>13.90</span>
+                    <button>Add carrinho</button>
+                </div>
+        </section>
+
+        <div id="container-card-3"> <!--CONTAINER 3-->
+                    
+            <div class="card-img">
+                <img src="imagens/laranja.jpg" id="Laranja">
+                <h3>Sabonete de Laranja</h3>
+                <p> R$12.90</p> <span>15.90</span>
+                <button class="btn-carrinho">Add carrinho</button>
+            </div>
+
+            <div class="card-img">
+                <img src="imagens/café.jpg" id="Café">
+                <h3>Sabonete de café</h3>
+                <p> R$13.90</p> <span>16.90</span>
+                <button class="btn-carrinho">Add carrinho</button>
+            </div>
+
+            <div class="card-img">
+                <img src="imagens/canela e mel.jpg" id="Canelaemel">
+                <h3>Sabonete de Canela e mel</h3>
+                <p> R$13.90</p> <span>15.90</span>
+                <button class="btn-carrinho">Add carrinho</button>
+            </div>
+        </div>
+        <main>
+            <section class="formulário">
+                <div class="interface">
+                    <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
+    
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Nome completo:" required> 
+                        <input type="text" name="" id="" placeholder="E-mail:" required> 
+                        <input type="text" name="" id="" placeholder="Celular:"> <!--USA-SE PLACEHOLDER PARA SUMIR O TEXTO QUE FOI SOLICITADO NAQUELA ATRIBUIÇÃO-->
+                        <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+    
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    </form> <!--TAG PARA CRIAR FORMULÁRIO-->
+    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> 2024 Nature Saboneteria . Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
